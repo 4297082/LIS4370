@@ -1,0 +1,12 @@
+assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+myMean <- function(assignment2) { return(sum(assignment2)/length(assignment2)) }
+
+> myMean(assignment2)
+[1] 19.25
+
+How the code works:
+sum(assignment2) adds up all the numbers in the list.
+length(assignment2) tells you how many numbers are in the list.
+Dividing the total sum by the number of numbers gives us the mean.
+
+The function works because it correctly calculated the average of the numbers. Adding all the numbers and dividing by how many there are gives the average which is 19.25.
