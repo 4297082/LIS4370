@@ -1,0 +1,9 @@
+s <- list(name = "Jake", age = 24, Height = 70) 
+
+setClass("member",
+          slots = list(
+              name = "character",
+              age = "numeric",
+              Height = "numeric"
+))
+s4 <- new("member", name = "Jake", age = 24, Height = 70)
