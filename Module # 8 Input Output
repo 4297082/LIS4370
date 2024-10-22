@@ -1,0 +1,20 @@
+data <- read.table("C:/Users/barre/Intro.Data.Science/Assignment 6 Dataset.txt", header = TRUE, sep=",")
+
+y = ddply(x,"Sex",transform, Grade.Average=mean(Grade))
+
+i_students <- subset(Student, grepl("i", Name, ignore.case = TRUE))
+
+write.table(i_students,file="i_students.txt",sep=",")
+
+
+
+
+
+
+
+
+
+
+
+
+
