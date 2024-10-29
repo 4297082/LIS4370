@@ -1,0 +1,43 @@
+library(readr)
+GoldSilver <- read_csv("C:/Users/barre/Intro.Data.Science/GoldSilver.csv")
+
+GoldSilver$Date <- as.Date(GoldSilver$rownames, format="%Y-%m-%d")
+plot(GoldSilver$Date, GoldSilver$gold, type="l", xlab="Date", ylab="Price", main="Gold and Silver Prices Over Time")
+
+hist(GoldSilver$silver, xlab="day", ylab="price")
+
+boxplot(GoldSilver$gold, GoldSilver$silver,
+         names = c("gold","silver"),
+         horizontal = TRUE,
+         ylab="metal",
+         xlab="price")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
