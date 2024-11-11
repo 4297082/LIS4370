@@ -1,0 +1,11 @@
+x <- 1967:1977
+ y <- c(0.5,1.8,4.6,5.3,5.3,5.7,5.4,5,5.5,6,5)
+ 
+ # Create a dot-dash plot
+ ggplot(data.frame(x, y), aes(x, y)) +
+     geom_point(color = "blue", size = 3) +    # Dot representation
+     geom_line(linetype = "dashed", color = "red") +  # Dash line connecting dots
+     theme_minimal() +
+     labs(title = "Dot-Dash Plot of Budget Expenditures", 
+          x = "Year", y = "Per Capita Budget Expenditures") +
+     theme(plot.title = element_text(hjust = 0.5))
