@@ -1,0 +1,33 @@
+---
+title: 'Module # 12 R Markdown'
+author: "Andre Barrett"
+date: "2024-11-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r cars}
+## Introduction
+
+This document describes the functions in the "SoccerPlayerRating" R package. This package helps analyze a soccer player's average rating over the last `x` games.
+
+## Function 1: `calculate_avg_rating()`
+
+This function calculates the player's average rating over the last `x` games.
+
+
+# Function to calculate the average rating over the last x games
+calculate_avg_rating <- function(player_data, x) {
+  avg_rating <- mean(tail(player_data$rating, x))
+  return(avg_rating)
+  
+  
+  This function generates a plot that shows how the player's ratings change over time, using the game ID as the x-axis and the rating as the y-axis. It helps visualize trends in the player's performance.
+
+Example Usage
+In this step, you can use the plot_player_performance() function to visualize how the player's ratings evolve across games.
+```
